@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ESR calculator</title>
+</head>
+<body>
+<h1>ESR calculation ( online! )</h1><small>Developed by Grigory Kolpakov email:grisoft@mail.ru</small>
+<script type="text/javascript" src="/gri-esr.js"></script>
+
+<button id="click-me-button1" type="button" onclick="GriEsr().addClickedMessage()">Click
+    me!
+</button>
+<p></p>
+
+<div id="divbuttons"></div>
+<br/>
+<button id="gauss" type="button" onclick="GriEsr().makeGauss()">Gauss</button>
+<button id="lorez" type="button" onclick="GriEsr().makeLorenz()">Lorenz</button>
+<button id="gausspick" type="button" onclick="GriEsr().makeGaussPick()">Gauss peaks</button>
+<button id="lorezpick" type="button" onclick="GriEsr().makeLorenzPick()">Lorenz peaks</button>
+
+
+<br/>I.
+<div id="div1"></div>
+
+<div id="divdft"></div>
+<button id="copy" type="button" onclick="GriEsr().makeCopy()">Copy I. to II.</button>
+<button id="integral" type="button" onclick="GriEsr().makeFirstIntegral()">First integral</button>
+<button id="dft" type="button" onclick="GriEsr().makeDFT()">Discrete Fourier transform</button>
+
+<br/>II.
+<div id="div2"></div>
+<button id="sum" type="button" onclick="GriEsr().makeSumma()">Sum III. = I. + II.</button>
+<button id="substruct" type="button" onclick="GriEsr().makeSubstruct()">Subtraction III. = I. - II.</button>
+<br/>III.
+<div id="div3"></div>
+<!--<INPUT TYPE="NUMBER" MIN="0" MAX="10" STEP="2" VALUE="6" SIZE="6">-->
+<script type="text/javascript">
+      GriEsr().main()
+
+</script>
+
+</body>
+</html>
